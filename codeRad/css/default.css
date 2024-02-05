@@ -29,6 +29,8 @@
   --size-150: 9.375rem;
 }
 
+html { scroll-behavior: smooth; }
+
 body {
   font-family: "Open Sans", sans-serif;
   font-weight: 400;
@@ -85,6 +87,10 @@ img {
   padding: 0.4375 1.5625rem;
 }
 
+a.btn-primary {
+  color: var(--white);
+}
+
 .btn {
   display: inline-block;
   font-weight: 400;
@@ -106,10 +112,24 @@ img {
   box-shadow: 0px 10px 20px rgba(255, 255, 255, 0.35);
 }
 
+@media (min-width: 768px) {
+  .pricing-table,
+  .testimonial-grid,
+  .footer-bottom-wrapper { max-width: 720px; }
+}
+
+
+@media (min-width: 940px) {
+  .testimonial-grid { max-width: 920px; }
+}
+
+@media (min-width: 992px) {
+  footer .container { max-width: 960px; }
+}
+
 @media (min-width: 1200px) {
   .container { max-width: 1140px; }
 }
 
-@media (min-width: 768px) {
-  .pricing-table { max-width: 720px; }
-}
+
+
